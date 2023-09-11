@@ -29,7 +29,7 @@ async function getWeatherDetails() {
 
  async function connectDB() {
     try {
-        const connect = await mongoose.connect(`mongodb+srv://wabalemayur8:MNZ2SAaNSqDIT0lJ@cluster0.vawmkxm.mongodb.net/Users-backend?retryWrites=true&w=majority`);
+        const connect = await mongoose.connect('mongo url');
         console.log("connection succesful", connect.connection.name);
         return
     } catch (error) {
